@@ -1,5 +1,5 @@
 # symfony-micro-demo-app
-Convenient Symfony app skeleton based on MicroKernelTrait.
+Convenient Symfony app skeleton based on the MicroKernelTrait.
 Made as a base for demo purposes.
 Comes with separate files:
 - routing.yml
@@ -9,7 +9,7 @@ Comes with separate files:
 and an example greeter controller.
 
 Run on the host machine
-=======================
+-----------------------
 
 To start, install composer dependencies:
 ```
@@ -23,11 +23,11 @@ bin/console server:run
 
 and send a curl GET request to the Greeting controller:
 ```
-curl http://localhost:8000/Marek -i
+curl localhost:8000/Marek -i
 ```
 
 Run with the docker
-===================
+-------------------
 
 If you have a `docker` and `docker-compose` installed on your machine 
 and want to start the demo application with the docker, 
