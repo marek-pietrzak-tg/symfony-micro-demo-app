@@ -1,0 +1,14 @@
+app:
+    build: .
+    volumes:
+        - .:/app
+nginx:
+    image: nginx
+    links:
+        - app
+    volumes_from:
+        - app
+    volumes:
+        - ./docker/vhost.conf:/etc/nginx/conf.d/default.conf
+    ports:
+        - "80:80"
